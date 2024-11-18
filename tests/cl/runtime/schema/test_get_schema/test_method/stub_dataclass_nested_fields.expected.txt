@@ -1,0 +1,67 @@
+_t: StubDataclassNestedFields
+Module:
+  ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_nested_fields
+Name: StubDataclassNestedFields
+Label: Stub Dataclass Nested Fields
+Comment: Stub derived class.
+DisplayKind: Basic
+Inherit:
+  Module:
+    ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_record
+  Name: StubDataclassRecord
+Elements:
+- Value:
+    Type: String
+  Name: Id
+- _t: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_data.StubDataclassData
+  Data:
+    Module:
+      ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_data
+    Name: StubDataclassData
+  Name: BaseField
+  Comment: Stub field.
+- _t: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_derived_data.StubDataclassDerivedData
+  Data:
+    Module:
+      ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_derived_data
+    Name: StubDataclassDerivedData
+  Name: DerivedField
+  Comment: Stub field.
+- _t: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_derived_from_derived_data.StubDataclassDerivedFromDerivedData
+  Data:
+    Module:
+      ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_derived_from_derived_data
+    Name: StubDataclassDerivedFromDerivedData
+  Name: DerivedFromDerivedField
+  Comment: Stub field.
+- _t: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_data.StubDataclassData
+  Data:
+    Module:
+      ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_data
+    Name: StubDataclassData
+  Name: PolymorphicField
+  Comment: Declared StubDataclassData but provided an instance of StubDataclassDerivedData.
+- _t: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_derived_data.StubDataclassDerivedData
+  Data:
+    Module:
+      ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_derived_data
+    Name: StubDataclassDerivedData
+  Name: PolymorphicDerivedField
+  Comment: Declared StubDataclassDerivedData but provided an instance of StubDataclassDerivedFromDerivedData.
+- _t: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_record_key.StubDataclassRecordKey
+  Key:
+    Module:
+      ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_record_key
+    Name: StubDataclassRecordKey
+  Name: KeyField
+  Comment: Stub field.
+- _t: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_record_key.StubDataclassRecordKey
+  Key:
+    Module:
+      ModuleName: stubs.cl.runtime.records.for_dataclasses.stub_dataclass_record_key
+    Name: StubDataclassRecordKey
+  Name: RecordAsKeyField
+  Comment: Stub field with key type initialized to record type instance.
+Keys:
+- Id
+

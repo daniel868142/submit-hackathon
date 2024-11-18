@@ -1,0 +1,10 @@
+text,verified,pay_receive_fixed
+Pay fixed,Y,PayFixed
+We pay fixed,Y,PayFixed
+Long,Y,PayFixed
+Buy,Y,PayFixed
+Receive fixed,Y,ReceiveFixed
+Rec fixed,Y,ReceiveFixed
+We receive fixed,Y,ReceiveFixed
+Short,Y,ReceiveFixed
+Sell,Y,ReceiveFixed
